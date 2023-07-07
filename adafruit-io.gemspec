@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", "~> 0.8"
   spec.add_dependency "faraday_middleware", "~> 0.9"
-  spec.add_dependency "activesupport",  "~> 4.2"
+  spec.add_dependency "activesupport",  "~> 7.0"
   spec.add_dependency "mqtt", "~> 0.4"
 
   spec.add_development_dependency "bundler", "~> 2.2.10"
