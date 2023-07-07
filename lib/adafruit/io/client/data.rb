@@ -91,6 +91,15 @@ module Adafruit
           get api_url(username, 'feeds', feed_key, 'data', data_id)
         end
 
+        # Delete a signle data point
+        def delete_datum(*args)
+          username, arguments = extract_username(args)
+          feed_key = get_key_from_arguments(arguments)
+          data_id = arguments.shift
+
+          delete api_url(username, 'feeds', feed_key, 'data', data_id)
+        end
+
         # Retrieve the next unprocessed data point.
         def next_data(*args)
           username, arguments = extract_username(args)
